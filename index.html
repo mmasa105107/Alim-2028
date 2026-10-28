@@ -18,12 +18,11 @@
     <header class="bg-emerald-800 text-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-xl md:text-2xl font-bold">📚 আলিম প্রথম বর্ষ</h1>
-            <nav class="hidden md:flex space-x-6">
+            <nav class="flex space-x-4 md:space-x-6 text-sm md:text-base">
                 <a href="#home" class="hover:text-emerald-200 transition">হোম</a>
-                <a href="#homework" class="hover:text-emerald-200 transition">হোমওয়ার্ক ও আপডেট</a>
-                <a href="#notice" class="hover:text-emerald-200 transition">নোটিশ বোর্ড</a>
+                <a href="#homework" class="hover:text-emerald-200 transition">হোমওয়ার্ক</a>
+                <a href="#notice" class="hover:text-emerald-200 transition">নোটিশ</a>
             </nav>
-            <a href="#homework" class="bg-emerald-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-emerald-700 transition">আজকের পড়া</a>
         </div>
     </header>
 
@@ -32,7 +31,7 @@
         <div class="max-w-3xl mx-auto">
             <span class="bg-emerald-700 text-emerald-100 text-xs font-semibold px-3 py-1 rounded-full uppercase">অফিসিয়াল ক্লাস পোর্টাল</span>
             <h2 class="text-3xl md:text-5xl font-bold mt-4 mb-4">আলিম প্রথম বর্ষ</h2>
-            <p class="text-emerald-100 text-lg mb-8">আমাদের ক্লাসের সকল হোমওয়ার্ক, নোটিশ এবং পড়াশোনার আপডেট এখন এক জায়গায়!</p>
+            <p class="text-emerald-100 text-lg mb-8">আমাদের ক্লাসের সকল হোমওয়ার্ক, নোটিশ এবং পরীক্ষার আপডেট এক জায়গায়!</p>
             <div class="flex justify-center gap-4">
                 <a href="#homework" class="bg-white text-emerald-900 font-semibold px-6 py-3 rounded-xl shadow hover:bg-emerald-50 transition">হোমওয়ার্ক দেখুন</a>
                 <a href="#notice" class="bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-emerald-600 transition border border-emerald-600">নোটিশ বোর্ড</a>
@@ -42,74 +41,131 @@
 
     <!-- Notice & Alert Section -->
     <section id="notice" class="max-w-7xl mx-auto px-4 py-10">
-        <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl shadow-sm flex items-start gap-4">
-            <div class="text-amber-500 text-2xl">📢</div>
+        <div class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-xl shadow-sm flex items-start gap-4">
+            <div class="text-amber-500 text-3xl">📢</div>
             <div>
-                <h3 class="font-bold text-amber-800 text-lg">জরুরি নোটিশ / পরীক্ষার খবর</h3>
-                <p class="text-amber-700 text-sm mt-1">আগামী **রবিবার** ইংরেজি বিষয়ে **Tense** এর ওপর বিশেষ পরীক্ষা অনুষ্ঠিত হবে। সবাই প্রস্তুতি নিয়ে আসবে।</p>
+                <h3 class="font-bold text-amber-800 text-xl">জরুরি নোটিশ / পরীক্ষার খবর</h3>
+                <p class="text-amber-700 text-base mt-2">আগামী **রবিবার** ইংরেজি বিষয়ে **Tense** এর ওপর বিশেষ পরীক্ষা অনুষ্ঠিত হবে। সবাই প্রস্তুতি নিয়ে ক্লাসে উপস্থিত থাকবে।</p>
             </div>
         </div>
     </section>
 
-    <!-- Homework Section -->
+    <!-- Homework Section (8 Subjects) -->
     <section id="homework" class="max-w-7xl mx-auto px-4 py-8">
-        <h3 class="text-2xl font-bold text-slate-800 border-l-4 border-emerald-700 pl-3 mb-6">📅 আজকের হোমওয়ার্ক ও ৮টি বিষয়ের আপডেট</h3>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h3 class="text-2xl font-bold text-slate-800 border-l-4 border-emerald-700 pl-3 mb-6">📅 ৮টি বিষয়ের হোমওয়ার্ক ও আজকের পড়া</h3>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Subject 1 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">১. আল-কুরআনুল কারিম</span>
-                <h4 class="font-bold text-lg mt-3 mb-2">সূরা বাকারা</h4>
-                <p class="text-slate-600 text-sm">তিলওয়াত ও তাফসীর মুখস্থ করতে হবে।</p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">বিষয় ১</span>
+                    <h4 class="font-bold text-lg mt-3 mb-2 text-emerald-900">আল-কুরআনুল কারিম</h4>
+                    <p class="text-slate-600 text-sm mb-4">সূরা বাকারা তিলওয়াত ও তাফসীর মুখস্থ করতে হবে।</p>
+                </div>
+                <button onclick="openDetail('আল-কুরআনুল কারিম', 'সূরা বাকারা (আয়াত ১-৫)', 'সূরা বাকারা তিলওয়াত ও তাফসীর মুখস্থ করতে হবে এবং আগামী ক্লাসে শোনানোর প্রস্তুতি নিতে হবে।')" class="w-full bg-emerald-50 text-emerald-700 font-medium py-2 rounded-lg hover:bg-emerald-700 hover:text-white transition text-sm">বিস্তারিত পেজ</button>
             </div>
+
             <!-- Subject 2 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">২. আল-হাদীস আশ-শরীফ</span>
-                <h4 class="font-bold text-lg mt-3 mb-2">প্রথম অধ্যায়</h4>
-                <p class="text-slate-600 text-sm">শব্দার্থ ও মূলভাব খাতায় লিখে আনতে হবে।</p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">বিষয় ২</span>
+                    <h4 class="font-bold text-lg mt-3 mb-2 text-emerald-900">আল-হাদীস আশ-শরীফ</h4>
+                    <p class="text-slate-600 text-sm mb-4">প্রথম অধ্যায়ের শব্দার্থ ও মূলভাব খাতায় লিখে আনতে হবে।</p>
+                </div>
+                <button onclick="openDetail('আল-হাদীস আশ-শরীফ', 'প্রথম অধ্যায়', 'প্রথম অধ্যায়ের আরবি শব্দার্থ এবং মূল ভাব খাতায় লিখে আনতে হবে।')" class="w-full bg-emerald-50 text-emerald-700 font-medium py-2 rounded-lg hover:bg-emerald-700 hover:text-white transition text-sm">বিস্তারিত পেজ</button>
             </div>
+
             <!-- Subject 3 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৩. আরবি ১ম পত্র (আল-লুগাতুল আরাবিয়াহ)</span>
-                <h4 class="font-bold text-lg mt-3 mb-2">গদ্য অংশ</h4>
-                <p class="text-slate-600 text-sm">অনুবাদের অনুশীলন ও প্রশ্ন উত্তর রিভিশন।</p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">বিষয় ৩</span>
+                    <h4 class="font-bold text-lg mt-3 mb-2 text-emerald-900">আরবি ১ম পত্র</h4>
+                    <p class="text-slate-600 text-sm mb-4">গদ্য অংশের অনুবাদের অনুশীলন ও প্রশ্ন উত্তর রিভিশন।</p>
+                </div>
+                <button onclick="openDetail('আরবি ১ম পত্র (আল-লুগাতুল আরাবিয়াহ)', 'গদ্য অংশ', 'গদ্য অংশের অনুবাদের অনুশীলন ও বিগত ক্লাসের প্রশ্ন উত্তর রিভিশন করতে হবে।')" class="w-full bg-emerald-50 text-emerald-700 font-medium py-2 rounded-lg hover:bg-emerald-700 hover:text-white transition text-sm">বিস্তারিত পেজ</button>
             </div>
+
             <!-- Subject 4 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৪. আরবি ২য় পত্র (নহ্ব ও সরফ)</span>
-                <h4 class="font-bold text-lg mt-3 mb-2">কালেমা ও কালাম</h4>
-                <p class="text-slate-600 text-sm">ইসম, ফেল ও হরফের প্রকারভেদ মুখস্থ।</p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">বিষয় ৪</span>
+                    <h4 class="font-bold text-lg mt-3 mb-2 text-emerald-900">আরবি ২য় পত্র</h4>
+                    <p class="text-slate-600 text-sm mb-4">নহ্ব ও সরফ থেকে কালেমা ও কালামের প্রকারভেদ মুখস্থ।</p>
+                </div>
+                <button onclick="openDetail('আরবি ২য় পত্র (নহ্ব ও সরফ)', 'কালেমা ও কালাম', 'ইসম, ফেল ও হরফের প্রকারভেদ উদাহরণসহ মুখস্থ করে আসতে হবে।')" class="w-full bg-emerald-50 text-emerald-700 font-medium py-2 rounded-lg hover:bg-emerald-700 hover:text-white transition text-sm">বিস্তারিত পেজ</button>
             </div>
+
             <!-- Subject 5 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৫. বাংলা</span>
-                <h4 class="font-bold text-lg mt-3 mb-2">গদ্য / কবিতা</h4>
-                <p class="text-slate-600 text-sm">শব্দার্থ ও পাঠ পরিচিতি ভালোভাবে দেখে আসতে হবে।</p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">বিষয় ৫</span>
+                    <h4 class="font-bold text-lg mt-3 mb-2 text-emerald-900">বাংলা</h4>
+                    <p class="text-slate-600 text-sm mb-4">নির্দিষ্ট গদ্য বা কবিতাংশ এবং শব্দার্থ পাঠ।</p>
+                </div>
+                <button onclick="openDetail('বাংলা সাহিত্য', 'গদ্য ও কবিতা', 'শব্দার্থ ও পাঠ পরিচিতি ভালোভাবে পড়ে ক্লাসে উপস্থিত থাকতে হবে।')" class="w-full bg-emerald-50 text-emerald-700 font-medium py-2 rounded-lg hover:bg-emerald-700 hover:text-white transition text-sm">বিস্তারিত পেজ</button>
             </div>
+
             <!-- Subject 6 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৬. ইংরেজি</span>
-                <h4 class="font-bold text-lg mt-3 mb-2">Grammar (Tense)</h4>
-                <p class="text-slate-600 text-sm">আসন্ন রবিবারের পরীক্ষার জন্য Tense ভালো করে প্র্যাকটিস করো।</p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">বিষয় ৬</span>
+                    <h4 class="font-bold text-lg mt-3 mb-2 text-emerald-900">ইংরেজি</h4>
+                    <p class="text-slate-600 text-sm mb-4">আসন্ন রবিবারের পরীক্ষার জন্য Tense প্র্যাকটিস।</p>
+                </div>
+                <button onclick="openDetail('ইংরেজি গ্রামার', 'Tense (বিশেষ পরীক্ষা)', 'আগামী রবিবার Tense এর ওপর পরীক্ষা রয়েছে। স্ট্রাকচার ও এক্সারসাইজ ভালোভাবে প্র্যাকটিস করো।')" class="w-full bg-emerald-50 text-emerald-700 font-medium py-2 rounded-lg hover:bg-emerald-700 hover:text-white transition text-sm">বিস্তারিত পেজ</button>
             </div>
+
             <!-- Subject 7 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৭. ফিকহ ও আকাইদ</span>
-                <h4 class="font-bold text-lg mt-3 mb-2">পবিত্রতা অধ্যায়</h4>
-                <p class="text-slate-600 text-sm">ওযু ও গোসলের ফরজ মাসয়ালাসমূহ রিভিশন।</p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">বিষয় ৭</span>
+                    <h4 class="font-bold text-lg mt-3 mb-2 text-emerald-900">ফিকহ ও আকাইদ</h4>
+                    <p class="text-slate-600 text-sm mb-4">পবিত্রতা অধ্যায় ও মাসয়ালা রিভিশন।</p>
+                </div>
+                <button onclick="openDetail('ফিকহ ও আকাইদ', 'পবিত্রতা অধ্যায়', 'ওযু ও গোসলের ফরজ মাসয়ালাসমূহ ভালোভাবে রিভিশন দিয়ে আসতে হবে।')" class="w-full bg-emerald-50 text-emerald-700 font-medium py-2 rounded-lg hover:bg-emerald-700 hover:text-white transition text-sm">বিস্তারিত পেজ</button>
             </div>
+
             <!-- Subject 8 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৮. তথ্য ও যোগাযোগ প্রযুক্তি (ICT)</span>
-                <h4 class="font-bold text-lg mt-3 mb-2">প্রথম অধ্যায়</h4>
-                <p class="text-slate-600 text-sm">বিশ্ব ও বাংলাদেশ প্রেক্ষিত রিডিং পড়তে হবে।</p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">বিষয় ৮</span>
+                    <h4 class="font-bold text-lg mt-3 mb-2 text-emerald-900">তথ্য ও যোগাযোগ প্রযুক্তি</h4>
+                    <p class="text-slate-600 text-sm mb-4">প্রথম অধ্যায় রিডিং ও নোট তৈরি।</p>
+                </div>
+                <button onclick="openDetail('তথ্য ও যোগাযোগ প্রযুক্তি (ICT)', 'প্রথম অধ্যায়', 'বিশ্ব ও বাংলাদেশ প্রেক্ষিত টপিকগুলো ভালোভাবে রিডিং পড়তে হবে।')" class="w-full bg-emerald-50 text-emerald-700 font-medium py-2 rounded-lg hover:bg-emerald-700 hover:text-white transition text-sm">বিস্তারিত পেজ</button>
             </div>
         </div>
     </section>
+
+    <!-- Dynamic Detail Page Modal / View -->
+    <div id="detailModal" class="fixed inset-0 bg-black/60 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden p-6 relative animate-fadeIn">
+            <button onclick="closeDetail()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold">&times;</button>
+            <span id="modalSubject" class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">বিষয়</span>
+            <h3 id="modalTitle" class="text-2xl font-bold text-slate-800 mt-3 mb-2"></h3>
+            <p id="modalDesc" class="text-slate-600 text-base mt-4 leading-relaxed bg-slate-50 p-4 rounded-xl border"></p>
+            <div class="mt-6 text-center">
+                <button onclick="closeDetail()" class="bg-emerald-800 text-white px-6 py-2.5 rounded-xl font-medium hover:bg-emerald-900 transition">ফিরে যান</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-white text-center py-6 mt-12">
         <p class="text-sm">আলিম প্রথম বর্ষ ক্লাস পোর্টাল © ২০২৬</p>
     </footer>
 
+    <!-- JavaScript for Page View Popup -->
+    <script>
+        function openDetail(subject, title, desc) {
+            document.getElementById('modalSubject').innerText = subject;
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('detailModal').classList.remove('hidden');
+        }
+        function closeDetail() {
+            document.getElementById('detailModal').classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
