@@ -6,12 +6,10 @@
     <title>আলিম প্রথম বর্ষ - ক্লাস পোর্টাল</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts (SolaimanLipi / Inter) -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Hind Siliguri', sans-serif;
-        }
+        body { font-family: 'Hind Siliguri', sans-serif; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -24,7 +22,6 @@
                 <a href="#home" class="hover:text-emerald-200 transition">হোম</a>
                 <a href="#homework" class="hover:text-emerald-200 transition">হোমওয়ার্ক ও আপডেট</a>
                 <a href="#notice" class="hover:text-emerald-200 transition">নোটিশ বোর্ড</a>
-                <a href="#teachers" class="hover:text-emerald-200 transition">শিক্ষকবৃন্দ</a>
             </nav>
             <a href="#homework" class="bg-emerald-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-emerald-700 transition">আজকের পড়া</a>
         </div>
@@ -33,9 +30,9 @@
     <!-- Hero Section -->
     <section id="home" class="bg-gradient-to-r from-emerald-900 to-teal-800 text-white py-16 px-4 text-center">
         <div class="max-w-3xl mx-auto">
-            <span class="bg-emerald-700 text-emerald-100 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">অফিসিয়াল ক্লাস পোর্টাল</span>
+            <span class="bg-emerald-700 text-emerald-100 text-xs font-semibold px-3 py-1 rounded-full uppercase">অফিসিয়াল ক্লাস পোর্টাল</span>
             <h2 class="text-3xl md:text-5xl font-bold mt-4 mb-4">আলিম প্রথম বর্ষ</h2>
-            <p class="text-emerald-100 text-lg mb-8">আমাদের ক্লাসের সকল হোমওয়ার্ক, নোটিশ এবং পড়াশোনার আপডেট এখন এক ক্লিকেই!</p>
+            <p class="text-emerald-100 text-lg mb-8">আমাদের ক্লাসের সকল হোমওয়ার্ক, নোটিশ এবং পড়াশোনার আপডেট এখন এক জায়গায়!</p>
             <div class="flex justify-center gap-4">
                 <a href="#homework" class="bg-white text-emerald-900 font-semibold px-6 py-3 rounded-xl shadow hover:bg-emerald-50 transition">হোমওয়ার্ক দেখুন</a>
                 <a href="#notice" class="bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-emerald-600 transition border border-emerald-600">নোটিশ বোর্ড</a>
@@ -48,95 +45,70 @@
         <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl shadow-sm flex items-start gap-4">
             <div class="text-amber-500 text-2xl">📢</div>
             <div>
-                <h3 class="font-bold text-amber-800 text-lg">জরুরি নোটিশ / বন্ধের খবর</h3>
-                <p class="text-amber-700 text-sm mt-1">আগামীকাল বিশেষ কারণে ক্লাস বন্ধ থাকতে পারে। সংশ্লিষ্ঠ বিষয়ের হোমওয়ার্ক নিচে আপডেট করা হয়েছে, সবাই সম্পন্ন করে রাখবেন।</p>
+                <h3 class="font-bold text-amber-800 text-lg">জরুরি নোটিশ / পরীক্ষার খবর</h3>
+                <p class="text-amber-700 text-sm mt-1">আগামী **রবিবার** ইংরেজি বিষয়ে **Tense** এর ওপর বিশেষ পরীক্ষা অনুষ্ঠিত হবে। সবাই প্রস্তুতি নিয়ে আসবে।</p>
             </div>
         </div>
     </section>
 
-    <!-- Homework & Daily Update Section -->
+    <!-- Homework Section -->
     <section id="homework" class="max-w-7xl mx-auto px-4 py-8">
-        <div class="flex justify-between items-center mb-6">
-            <h3 class="text-2xl font-bold text-slate-800 border-l-4 border-emerald-700 pl-3">📅 আজকের হোমওয়ার্ক ও ক্লাস আপডেট</h3>
-            <span class="text-sm text-slate-500 bg-white px-3 py-1 rounded-full border">তারিখ: অদ্যকার আপডেট</span>
-        </div>
-
+        <h3 class="text-2xl font-bold text-slate-800 border-l-4 border-emerald-700 pl-3 mb-6">📅 আজকের হোমওয়ার্ক ও ৮টি বিষয়ের আপডেট</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Subject Card 1 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">আল-কুরআনুল কারিম</span>
-                    <span class="text-xs text-slate-400">উস্তাদ: মাওলানা সাহেব</span>
-                </div>
-                <h4 class="font-bold text-lg mb-2">সূরা বাকারা (আয়াত ১-৫)</h4>
-                <p class="text-slate-600 text-sm mb-4">শর্তসহ তিলাওয়াত ও তাফসীর মুখস্থ করতে হবে। আগামী ক্লাসে ধরা হবে।</p>
-                <div class="border-t pt-3 flex justify-between items-center text-xs text-emerald-700 font-medium">
-                    <span>স্ট্যাটাস: চলমান</span>
-                    <span class="bg-emerald-50 px-2 py-1 rounded text-emerald-800">হোমওয়ার্ক সম্পন্ন করুন</span>
-                </div>
+            <!-- Subject 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">১. আল-কুরআনুল কারিম</span>
+                <h4 class="font-bold text-lg mt-3 mb-2">সূরা বাকারা</h4>
+                <p class="text-slate-600 text-sm">তিলওয়াত ও তাফসীর মুখস্থ করতে হবে।</p>
             </div>
-
-            <!-- Subject Card 2 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">আল-হাদীস আশ-শরীফ</span>
-                    <span class="text-xs text-slate-400">উস্তাদ: শিক্ষক মহোদয়</span>
-                </div>
-                <h4 class="font-bold text-lg mb-2">প্রথম অধ্যায় (হাদীস ১ ও ২)</h4>
-                <p class="text-slate-600 text-sm mb-4">আরবি শব্দার্থ এবং মূল ভাব খাতায় লিখে আনতে হবে।</p>
-                <div class="border-t pt-3 flex justify-between items-center text-xs text-emerald-700 font-medium">
-                    <span>স্ট্যাটাস: হোমওয়ার্ক দেওয়া হয়েছে</span>
-                    <span class="bg-emerald-50 px-2 py-1 rounded text-emerald-800">বাধ্যতামূলক</span>
-                </div>
+            <!-- Subject 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">২. আল-হাদীস আশ-শরীফ</span>
+                <h4 class="font-bold text-lg mt-3 mb-2">প্রথম অধ্যায়</h4>
+                <p class="text-slate-600 text-sm">শব্দার্থ ও মূলভাব খাতায় লিখে আনতে হবে।</p>
             </div>
-
-            <!-- Subject Card 3 -->
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">বাংলা / ইংরেজি</span>
-                    <span class="text-xs text-slate-400">উস্তাদ: শিক্ষক মহোদয়</span>
-                </div>
-                <h4 class="font-bold text-lg mb-2">গ্রামার ও প্যাসেজ</h4>
-                <p class="text-slate-600 text-sm mb-4">ইংরেজি রাইটিং পার্ট থেকে প্যারাগ্রাফ রিভিশন থাকবে।</p>
-                <div class="border-t pt-3 flex justify-between items-center text-xs text-emerald-700 font-medium">
-                    <span>স্ট্যাটাস: প্রস্তুত থাকা আবশ্যক</span>
-                    <span class="bg-emerald-50 px-2 py-1 rounded text-emerald-800">শিট ফলো করুন</span>
-                </div>
+            <!-- Subject 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৩. আরবি ১ম পত্র (আল-লুগাতুল আরাবিয়াহ)</span>
+                <h4 class="font-bold text-lg mt-3 mb-2">গদ্য অংশ</h4>
+                <p class="text-slate-600 text-sm">অনুবাদের অনুশীলন ও প্রশ্ন উত্তর রিভিশন।</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Teachers Section -->
-    <section id="teachers" class="max-w-7xl mx-auto px-4 py-12">
-        <h3 class="text-2xl font-bold text-slate-800 border-l-4 border-emerald-700 pl-3 mb-6">👨‍🏫 আমাদের শ্রদ্ধেয় শিক্ষকবৃন্দ</h3>
-        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-white p-4 rounded-xl text-center shadow-sm border border-slate-100">
-                <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">মু</div>
-                <h4 class="font-bold">মাওলানা শিক্ষক</h4>
-                <p class="text-xs text-slate-500 mt-1">কুরআন ও হাদিস বিভাগ</p>
+            <!-- Subject 4 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৪. আরবি ২য় পত্র (নহ্ব ও সরফ)</span>
+                <h4 class="font-bold text-lg mt-3 mb-2">কালেমা ও কালাম</h4>
+                <p class="text-slate-600 text-sm">ইসম, ফেল ও হরফের প্রকারভেদ মুখস্থ।</p>
             </div>
-            <div class="bg-white p-4 rounded-xl text-center shadow-sm border border-slate-100">
-                <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">অ</div>
-                <h4 class="font-bold">আরবি সাহিত্য শিক্ষক</h4>
-                <p class="text-xs text-slate-500 mt-1">আল-লুগাতুল আরাবিয়াহ</p>
+            <!-- Subject 5 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৫. বাংলা</span>
+                <h4 class="font-bold text-lg mt-3 mb-2">গদ্য / কবিতা</h4>
+                <p class="text-slate-600 text-sm">শব্দার্থ ও পাঠ পরিচিতি ভালোভাবে দেখে আসতে হবে।</p>
             </div>
-            <div class="bg-white p-4 rounded-xl text-center shadow-sm border border-slate-100">
-                <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">ব</div>
-                <h4 class="font-bold">সাধারণ শিক্ষা শিক্ষক</h4>
-                <p class="text-xs text-slate-500 mt-1">বাংলা ও ইংরেজি</p>
+            <!-- Subject 6 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৬. ইংরেজি</span>
+                <h4 class="font-bold text-lg mt-3 mb-2">Grammar (Tense)</h4>
+                <p class="text-slate-600 text-sm">আসন্ন রবিবারের পরীক্ষার জন্য Tense ভালো করে প্র্যাকটিস করো।</p>
             </div>
-            <div class="bg-white p-4 rounded-xl text-center shadow-sm border border-slate-100">
-                <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">স</div>
-                <h4 class="font-bold">অন্যান্য বিষয়</h4>
-                <p class="text-xs text-slate-500 mt-1">ফিকহ ও আকাইদ</p>
+            <!-- Subject 7 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৭. ফিকহ ও আকাইদ</span>
+                <h4 class="font-bold text-lg mt-3 mb-2">পবিত্রতা অধ্যায়</h4>
+                <p class="text-slate-600 text-sm">ওযু ও গোসলের ফরজ মাসয়ালাসমূহ রিভিশন।</p>
+            </div>
+            <!-- Subject 8 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">৮. তথ্য ও যোগাযোগ প্রযুক্তি (ICT)</span>
+                <h4 class="font-bold text-lg mt-3 mb-2">প্রথম অধ্যায়</h4>
+                <p class="text-slate-600 text-sm">বিশ্ব ও বাংলাদেশ প্রেক্ষিত রিডিং পড়তে হবে।</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-white text-center py-6 mt-12">
-        <p class="text-sm">আলিম প্রথম বর্ষ ক্লাস পোর্টাল © ২০২৬ | সকল অধিকার সংরক্ষিত</p>
-        <p class="text-xs text-slate-400 mt-1">ডেভেলপড এবং মেইনটেইনড উইথ গিটহাব পেজেস</p>
+        <p class="text-sm">আলিম প্রথম বর্ষ ক্লাস পোর্টাল © ২০২৬</p>
     </footer>
 
 </body>
